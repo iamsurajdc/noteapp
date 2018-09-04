@@ -23,18 +23,9 @@ if(command === 'add'){
     notes.readNote(argv.title);
 
 } else if(command === 'remove'){
-    notes.removeNote(argv.title);
+    var noteRemoved = removeNote(argv.title);
+    
 
-// } else if(command === 'remove'){
-//     notes.removeNote(argv.title);
 } else {
     console.log("command not recognised");
 }
-
-// console.log(`Age: ${notes.age}`);
-
-// fs.appendFile('append.txt', "This is text to be appended.", (err) =>{
-//     if(err){
-//         console.log('Unable to write file.');
-//     }
-// });
